@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="LosGatos">
+<head>
+	<meta charset="uft-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Carl and Franky</title>
+	
+	<link rel="stylesheet" href="../stylesheets/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
+	
+	<!-- Vendor -->
+		<!-- Auth0's lock widget library -->
+	<script src="https://cdn.auth0.com/js/lock-7.12.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>  
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-cookies.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-resource.js"></script>
+		<!-- Auth0's Angular SDK Library -->
+	<script src="https://cdn.auth0.com/w2/auth0-angular-4.js"></script>
+		<!-- Angular wrapper for localStorage and sessionStorage. Defaults to ng-cookies if not available -->
+	<script src="https://cdn.rawgit.com/auth0/angular-storage/master/dist/angular-storage.js"> </script>
+		<!-- Angular wrapper library for JWT-->
+	<script src="https://cdn.rawgit.com/auth0/angular-jwt/master/dist/angular-jwt.js"> </script>
+
+
+
+	<!-- App -->
+	<script src="javascripts/main.js"></script>
+	<script src="javascripts/routes.js"></script>
+
+	<!-- Controllers -->
+	<script src="javascripts/controllers/HomeController.js"></script>
+	<script src="javascripts/controllers/ContactController.js"></script>
+	<script src="javascripts/controllers/LoginController.js"></script>
+	<script src="javascripts/controllers/ProfileController.js"></script>
+</head>
+<body>
+	
+
+<!-- Logo and catchphrase -->
+
+	<header ng-controller="LoginController" class="container group">
+		<div class="logo-tag">
+			<h1 class="logo">
+				<a ng-href="#/">
+					Carl &amp; <br> Franky
+				</a>
+			</h1>
+			<h3>Catboys at large</h3>
+		</div>
+		<img ng-src="{{profile.picture}}" height="150px" class="pull-right" ng-show="auth.isAuthenticated">
+		<div class="login" >			
+			<a ng-href="#/" ng-hide="auth.isAuthenticated" ngCloak ng-click="login()">Sign In/Up</a>
+			<a  class="name" ng-href="#/profile" ng-show="auth.isAuthenticated" ngCloak =>{{profile.name}}</a>
+			<br>
+			<a ng-href="#/" ng-show="auth.isAuthenticated" ngCloak ng-click="logout()">Sign Out</a>
+		</div>
+		<nav class="head-nav nav">
+			<ul>
+				<li><a ng-href="#/">Home</a></li><!--
+				--><li><a href="gallery.html">Gallery</a></li><!--
+				--><li><a href="activities.html">Activities</a></li><!--
+				--><li><a href="cat-likes.html">Things they Love</a></li><!--
+				--><li><a ng-href="#/contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+<!-- Site Description -->
+	<div ng-view></div>
+	
+	<footer class="container">
+
+<!-- my famous Logo -->
+
+		<small class="footer">&copy; A MIGboT Production.</small>
+		
+<!-- navigation stuff -->
+
+		<nav class="foot-nav nav">
+			<ul>
+				<li><a ng-href="#/">Home</a></li><!--
+				--><li><a href="gallery.html">Gallery</a></li><!--
+				--><li><a href="activities.html">Activities</a></li><!--
+				--><li><a href="cat-likes.html">Things they Love</a></li><!--
+				--><li><a href="#/contact">Contact</a></li>
+			</ul>
+		</nav>
+		<nav>
+			
+		</nav>
+	</footer>
+</body>
+
+
+
+<!-- Some Local jQuery for contact page fun -->
+<!-- <script src="/javascripts/contact.js"></script> -->
+</html>

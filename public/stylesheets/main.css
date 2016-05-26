@@ -1,0 +1,429 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+========================================
+Custom styles
+========================================
+*/
+body {
+	background: #374140;
+	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+h1,
+h2,
+h3,
+h4 {
+	color: #01A2A6;
+}
+h1 {
+	font-size: 36px;
+	line-height: 44px;
+	
+	
+}
+h2 {
+	color: #374140;
+	font-size: 24px;
+	line-height: 44px;
+}
+h3 {
+	font-size: 21px;
+
+}
+h4 {
+	color: #2A2C2B;
+	font-size: 18px;
+}
+h5 {
+	color: #DC3522;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+p {
+	color: #2A2C2B;
+}
+
+small {
+	color: #DC3522;
+	font-weight: 400;
+}
+/*
+=======================================
+Links
+=======================================
+*/
+a {
+	color: #01A2A6;
+	text-decoration: none;
+}
+a:hover {
+	color: #DC3522;
+}
+/*
+============================
+Clearfix
+============================
+*/
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+
+}
+.group:after {
+	clear: both;
+}
+.group {
+	clear: both;
+	*zoom: 1;
+}
+/*
+===========================
+Grid
+===========================
+*/
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 30px;
+	max-width: 100%;
+	min-width: 960px;
+}
+
+.row {
+	background: #D9CB9E;
+	/*border-top: 1px solid #0092b2;*/
+	/*border-bottom: 1px solid #0092b2;*/
+}
+
+.row-alt {
+	/*background: linear-gradient(#dfd3b6, #fff);*/
+	background: #fff;
+}
+
+.row, 
+.row-alt {
+	padding: 30px 0px;
+	min-width: 960px;
+}
+
+.col-1-3 {
+	width: 33.33%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 10px;
+}
+.mid {
+	padding: 0 20px;
+}
+.col-1-2 {
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 10px;
+}
+
+.col-2-3 {
+	width: 66.66%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 10px;
+}
+/*
+==============================
+Buttons
+==============================
+*/
+.btn {
+	padding: 20px;
+	background: #2A2C2B;
+	color: #01A2A6;
+	font-size: 18px;
+	border-radius: 10px;
+	display: inline-block;
+	font-weight: 400;
+	border: 2px solid #2A2C2B;
+	display: none;
+	margin-top: 10px;
+	text-align: right;
+
+}
+.btn:hover {
+	cursor: pointer;
+	border: 2px solid #DC3522;
+
+}
+/*
+==============================
+Header
+==============================
+*/
+.logo a {
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+
+}
+.logo-tag {
+	/*display: inline-block;*/
+	padding: 20px 0;
+	/*font-weight: 400;*/
+	float: left;
+
+}
+.head-nav {
+	padding: 102px 0 0 0;
+	font-size: 26px;
+	line-height: 28px;
+	text-align: right;
+	letter-spacing: .5px;
+}
+.logo-tag h3 {
+	color: #DC3522;
+	/*text-shadow: 2px 2px 5px #fff;*/
+
+}
+/*.logo-tag h3:hover {*/
+	/*text-shadow: 2px 2px 5px #776045;*/
+
+/*}*/
+
+.login {
+	float: right;
+	padding-top: 20px;
+	text-align: right;
+}
+
+.pull-right {
+	float: right;
+	margin-right: -30px;
+	padding-left: 10px;
+	
+}
+/*
+========================================
+Navigation
+========================================
+*/
+.nav li {
+	display: inline-block;
+	padding-right: 30px;
+}
+.nav li:last-child {
+	padding-right: 0;
+}
+/*
+=====================================
+Footer
+=====================================
+*/
+footer small {
+	padding: 20px 0;
+	/*display: inline-block;*/
+	float: left;
+}
+
+.foot-nav {
+	/*display: inline-block;*/
+	padding-top: 20px;
+	text-align: right;
+}
+/*
+===================================
+Home
+===================================
+*/
+.teaser img {
+	display: block;
+	max-width: 100%;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	border-radius: 5px;
+	/*border: 2px solid #0092b2;*/
+}
+.teaser a:hover {
+	text-shadow: 2px 2px 5px #374140;
+}
+/*
+=========================
+About
+=========================
+*/
+.message {
+	margin-top: 20px;
+	padding: 20px;
+	display: inline-block;
+	background-color: #fff;
+	border: 2px solid #DC3522;
+	border-radius: 10px;
+	min-width: 100%;
+	height: 300px;
+	vertical-align: top;
+	color: #1E1E20;
+	text-align: left;
+	line-height: 20px;
+	letter-spacing: .1px;
+	font: 400 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+textarea.message {
+	display: none;
+}
+#messbtn {}
+
+.btnclick {
+	text-align: center;
+	/*color: #000;*/
+}
+
+.col-1-2 h1 {
+	font-size: 200%;
+}
+
+/*.marker {
+	position: relative;*/
+
+.pin {
+	width: 20px;
+	display: none;
+
+}
+.catpin {
+	width: 20px;
+	display: none;
+}	 
+
+/*
+============================
+Profile
+============================
+*/
+.profile {
+
+}
+
+.profile img {
+	display: block;
+	max-width: 100%;
+	border: solid 2px #DC3522;
+	border-radius: 5px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+.update a {
+	font-size: 10px;
+}
+
+.update h1 {
+	padding-bottom: 20px;
+	padding-left: 10px;
+	text-align: left;
+	
+}
+
+.update label {
+	font-size: 16px;
+	font-weight: 400;
+	display: block;
+}
+
+.update input,
+.update select {
+	width: 100%;
+	border: 2px solid #DC3522; 
+	border-radius: 5px;
+	font: 300 24px/36px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-bottom: 20px;
+	padding: 10px;
+	color: #DC3522;
+	background-color: #000;
+
+
+}
+
+.ella {
+	border: 2px solid #DC3522;
+	border-radius: 100px;
+	margin-left: auto;
+	/*margin-right: auto;*/
+	display: block;
+}
+
+/*
+===========================
+mobile
+===========================
+*/
+@media all and (max-device-width: 450px) and (-webkit-min-device-pixel-ratio: 1.3) {
+	.col-1-3 {
+		display: inline;
+	}
+	.logo-tag {
+		float: none;
+	}
+	.head-nav {
+		font-size: 34px;
+		line-height: 36px;
+		text-align: center;
+		padding-top: 40px;
+	}
+	p {
+		font-size: 12px;
+	}
+}
+
