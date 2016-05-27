@@ -100,11 +100,11 @@ small {
 Links
 =======================================
 */
-a {
+a.a {
 	color: #01A2A6;
 	text-decoration: none;
 }
-a:hover {
+a.a:hover {
 	color: #DC3522;
 }
 /*
@@ -138,26 +138,26 @@ Grid
 	        box-sizing: border-box;
 }
 
-.container {
+.containerz {
 	margin: 0 auto;
 	padding: 0 30px;
 	max-width: 100%;
 	min-width: 960px;
 }
 
-.row {
+.rowz {
 	background: #D9CB9E;
 	/*border-top: 1px solid #0092b2;*/
 	/*border-bottom: 1px solid #0092b2;*/
 }
 
-.row-alt {
+.rowz-alt {
 	/*background: linear-gradient(#dfd3b6, #fff);*/
 	background: #fff;
 }
 
-.row, 
-.row-alt {
+.rowz, 
+.rowz-alt {
 	padding: 30px 0px;
 	min-width: 960px;
 }
@@ -189,7 +189,7 @@ Grid
 Buttons
 ==============================
 */
-.btn {
+.btnz {
 	padding: 20px;
 	background: #2A2C2B;
 	color: #01A2A6;
@@ -359,7 +359,7 @@ Profile
 .profile img {
 	display: block;
 	max-width: 100%;
-	border: solid 2px #DC3522;
+	border: solid 2px #2A2C2B;
 	border-radius: 5px;
 	margin-right: auto;
 	margin-left: auto;
@@ -385,24 +385,69 @@ Profile
 .update input,
 .update select {
 	width: 100%;
-	border: 2px solid #DC3522; 
+	border: 2px solid #2A2C2B; 
 	border-radius: 5px;
-	font: 300 24px/36px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 300 24px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin-bottom: 20px;
 	padding: 10px;
 	color: #DC3522;
-	background-color: #000;
+	background-color: #fff;
+	line-height: 36px !important
 
+}
 
+.update input:focus,
+.update select:focus {
+	border-color: #fff;
+}
+
+.update select {
+	padding-top: 12.75px;
+	padding-bottom: 12.75px;
+}
+
+#profile-cancel, 
+#profile-save {
+	width: 25%;
+	float: right;
+
+	
+
+	
+}
+
+#profile-cancel {
+	margin-right: 5px;
+	background-color: #2A2C2B;
+	color: #fff;
+}
+
+#profile-save {
+	background-color: #DC3522;
+	color: #fff;
+	border-color: #DC3522;
+}
+
+#profile-cancel:hover, 
+#profile-save:hover {
+	border-color: #fff;
 }
 
 .ella {
-	border: 2px solid #DC3522;
+	border: 2px solid #2A2C2B;
 	border-radius: 100px;
 	margin-left: auto;
-	/*margin-right: auto;*/
+	margin-right: auto;
 	display: block;
 }
+
+.ng-dirty.ng-invalid input {
+	color: #8C0A2F;
+
+}
+
+.ng-dirty.ng-valid input {
+	color: #098A17;
 
 /*
 ===========================

@@ -1,6 +1,6 @@
-<section class="row">
-	<div class="container">
-		<form class="update">
+<section class="rowz">
+	<div class="containerz">
+		<form class="update" novalidate>
 			
 			<div class="col-1-3 profile">			
 
@@ -8,39 +8,35 @@
 
 			</div><!-- Delete Space
 	
-		--><div class="col-2-3">
-			<h1 class="">Catboys like to keep in touch. Keep your profile up to date!!</h1>
-			
+			--><div class="col-2-3">
+				<h1 class="">Catboys like to keep in touch. Keep your profile up to date!!</h1>
+				
 
 
-			<fieldset class="col-1-2">
-					<label for="Name">Name</label>
-					<input class="" type="text" id="name" ng-model="profile.name" ></input>
-					<label for="Nickname">Nickname</label>
-					<input class="" type="text" id="nickname" ng-model="profile.nickname" ></input>
-					<label for="Email">Email</label>
-					<input class="" type="text" id="email" ng-model="profile.email" ></input>
-			</fieldset><!-- Delete Space
- 
-			--><fieldset class="col-1-2">
-				<img class="ella" ng-src="../images/ellaVote.jpg" height=200>
-				<label for="title">Do you like our sister? (She's a dog)</label>
-				<select>
-					<option value="No">No</option>
-					<option value="Yes">Yes</option>
-				</select>
-				<label for="title">Team</label>
-				<select ng-options="category.id as category.name for category in categories" ng-model="note.categoryId">
-					
-				</select>
-			</fieldset>
-		</div>
+				<fieldset class="col-1-2">
+						<label for="Name">Name</label>
+						<input class="" type="text" id="name" ng-model="profile.name" required ></input>
+						<label for="Nickname">Nickname</label>
+						<input class="" type="text" id="nickname" ng-model="profile.nickname" ></input>
+						<label for="Email">Email</label>
+						<input class="" type="email" id="email" ng-model="profile.email" required></input>
+				</fieldset><!-- Delete Space
+	 
+				--><fieldset class="col-1-2">
+					<img class="ella" ng-src="../images/ellaVote.jpg" height=200>
+					<label for="title">Do you like our sister? (She's a dog)</label>
+					<select>
+						<option value="No">No</option>
+						<option value="Yes">Yes</option>
+					</select>
+					<input ng-click="saveNote(note)" type="submit" id="profile-save" ng-disabled="isSubmitting" value="{{isSubmitting ? 'saving...':'Save'}}"></input>
+					<input ng-click="cancelNote(note)" type="submit" id="profile-cancel" value="Cancel"></input>
+				</fieldset>
+			</div>
 
 			
 
-			<input ng-click="saveNote(note)" type="submit" class="btn btn-default" ng-disabled="isSubmitting" value="{{isSubmitting ? 'saving...':'Save'}}"></input>
 
-			<input ng-click="cancelNote(note)" type="submit" class="btn btn-danger" value="Cancel"></input>
 		</form>
 	</div>
 </section>

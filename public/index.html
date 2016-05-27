@@ -5,8 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Carl and Franky</title>
 	
-	<link rel="stylesheet" href="../stylesheets/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../stylesheets/main.css">
 	
 	<!-- Vendor -->
 		<!-- Auth0's lock widget library -->
@@ -40,10 +41,10 @@
 
 <!-- Logo and catchphrase -->
 
-	<header ng-controller="LoginController" class="container group">
+	<header ng-controller="LoginController" class="containerz">
 		<div class="logo-tag">
 			<h1 class="logo">
-				<a ng-href="#/">
+				<a class="a" ng-href="#/">
 					Carl &amp; <br> Franky
 				</a>
 			</h1>
@@ -51,18 +52,18 @@
 		</div>
 		<img ng-src="{{profile.picture}}" height="150px" class="pull-right" ng-show="auth.isAuthenticated">
 		<div class="login" >			
-			<a ng-href="#/" ng-hide="auth.isAuthenticated" ngCloak ng-click="login()">Sign In/Up</a>
-			<a  class="name" ng-href="#/profile" ng-show="auth.isAuthenticated" ngCloak =>{{profile.name}}</a>
+			<a class="a" ng-href="#/" ng-hide="auth.isAuthenticated" ngCloak ng-click="login()">Sign In/Up</a>
+			<a  class="a name" ng-href="#/profile" ng-show="auth.isAuthenticated" ngCloak =>{{profile.name}}</a>
 			<br>
-			<a ng-href="#/" ng-show="auth.isAuthenticated" ngCloak ng-click="logout()">Sign Out</a>
+			<a class="a" ng-href="#/" ng-show="auth.isAuthenticated" ngCloak ng-click="logout()">Sign Out</a>
 		</div>
 		<nav class="head-nav nav">
 			<ul>
-				<li><a ng-href="#/">Home</a></li><!--
-				--><li><a href="gallery.html">Gallery</a></li><!--
-				--><li><a href="activities.html">Activities</a></li><!--
-				--><li><a href="cat-likes.html">Things they Love</a></li><!--
-				--><li><a ng-href="#/contact">Contact</a></li>
+				<li><a class="a" ng-href="#/">Home</a></li><!--
+				--><li><a class="a" href="gallery.html">Gallery</a></li><!--
+				--><li><a class="a" href="activities.html">Activities</a></li><!--
+				--><li><a class="a" href="cat-likes.html">Things they Love</a></li><!--
+				--><li><a class="a" ng-href="#/contact">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -70,7 +71,7 @@
 <!-- Site Description -->
 	<div ng-view></div>
 	
-	<footer class="container">
+	<footer class="containerz">
 
 <!-- my famous Logo -->
 
@@ -80,11 +81,11 @@
 
 		<nav class="foot-nav nav">
 			<ul>
-				<li><a ng-href="#/">Home</a></li><!--
-				--><li><a href="gallery.html">Gallery</a></li><!--
-				--><li><a href="activities.html">Activities</a></li><!--
-				--><li><a href="cat-likes.html">Things they Love</a></li><!--
-				--><li><a href="#/contact">Contact</a></li>
+				<li><a class="a" ng-href="#/">Home</a></li><!--
+				--><li><a class="a" href="gallery.html">Gallery</a></li><!--
+				--><li><a class="a" href="activities.html">Activities</a></li><!--
+				--><li><a class="a" href="cat-likes.html">Things they Love</a></li><!--
+				--><li><a class="a" href="#/contact">Contact</a></li>
 			</ul>
 		</nav>
 		<nav>
