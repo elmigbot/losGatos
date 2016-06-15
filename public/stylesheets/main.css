@@ -402,13 +402,13 @@ Profile
 }
 
 .update select {
-	padding-top: 12.75px;
-	padding-bottom: 12.75px;
+	padding-top: 12.5px;
+	padding-bottom: 12.5px;
 }
 
 #profile-cancel, 
 #profile-save {
-	width: 25%;
+	width: 40%;
 	float: right;
 
 	
@@ -433,7 +433,7 @@ Profile
 	border-color: #fff;
 }
 
-.ella {
+img.ella {
 	border: 2px solid #2A2C2B;
 	border-radius: 100px;
 	margin-left: auto;
@@ -441,15 +441,28 @@ Profile
 	display: block;
 }
 
-.ng-dirty.ng-invalid input {
-	color: #8C0A2F;
+.ella {
+	margin-top: 2px;
+}
+.ng-dirty.ng-invalid#email {
+	border: 5px solid #DC3522;
+
+}
+.ng-dirty.ng-invalid#name {
+	border: 5px solid #DC3522;
 
 }
 
-.ng-dirty.ng-valid input {
-	color: #098A17;
+.errors span {
+	display: inline-block;
+	color: #DC3522;
+}
 
-/*
+/*.ng-dirty.ng-valid #email,
+.ng-dirty.ng-valid #name {
+	color: #098A17;
+}*/
+/*#DC3522;
 ===========================
 mobile
 ===========================

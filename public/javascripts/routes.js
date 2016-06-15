@@ -18,7 +18,7 @@ angular.module('LosGatos').config(function($routeProvider, authProvider, $httpPr
 
 		})
 
-		.when('/profile', {
+		.when('/profile/:id/edit', {
 			templateUrl: '/html/profile.html',
 			controller: 'ProfileController',
 			requiresLogin: true

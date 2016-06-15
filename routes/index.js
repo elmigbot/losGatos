@@ -26,4 +26,9 @@ router.get('/private', jwtCheck, function(req, res, next) {
 router.get('/public', function(req, res, next) {
   res.send('public stuff!!');
 });
+
+router.get('/profile/:id', jwtCheck, function(req, res, next) {
+	res.send("hooked up");
+});
+
 module.exports = router;

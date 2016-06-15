@@ -1,15 +1,17 @@
-angular.module('LosGatos').controller('LoginController', function($scope, auth, store, $location, $rootScope){
+angular.module('LosGatos').controller('LoginController', function($routeParams, User, $scope, auth, store, $location, $rootScope){
 	
 	$scope.auth = auth;
-	console.log($rootScope.profile, 'top');
 	
 
-
+//$scope.user = User.get({id: $routeParams.id});
 
 	$scope.login = function() {
 		auth.signin();
 		
 	};
+
+	//var localProfile = User.get({id: $routeParams.id});
+	//console.log(localProfile);
 
 	$rootScope.profile = store.get('profile'); 
 		
